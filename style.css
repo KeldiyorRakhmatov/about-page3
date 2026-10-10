@@ -102,3 +102,130 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
+
+
+.directors-container {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    background: #004047;
+}
+
+.directors-heading {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+
+    margin-bottom: 64px;
+}
+
+.boxes {
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 76px 30px;
+}
+
+.box {
+    width: 350px;
+    height: 253px;
+    background: #012f34;
+    cursor: pointer;
+    padding: 32px 24px 56px;
+    text-align: center;
+    transition: 0.5s;
+
+    position: relative;
+}
+
+.box-name {
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 156%;
+    text-align: center;
+    color: #79c8c7;
+}
+
+.box-job {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 167%;
+    text-align: center;
+    color: #fff;
+}
+
+.plus-btn {
+    width: 56px;
+    height: 56px;
+    background-color: #f67e7e;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.x-btn {
+    width: 56px;
+    height: 56px;
+    background-color: #79c8c7;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.about-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 156%;
+    text-align: center;
+    color: #79c8c7;
+}
+
+.about-text {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 167%;
+    text-align: center;
+    color: #fff;
+
+    margin-top: 8px;
+}
+
+.about-box {
+    display: none;
+    transition: 0.5s;
+}
+
+.image-box {
+    transition: 0.5s;
+}
+
+.box:hover .image-box {
+    display: none;
+}
+
+.box:hover .about-box {
+    display: block;
+}
+
+.media-ul {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    margin-top: 24px;
+    justify-content: center;
+    align-items: center;
+}
